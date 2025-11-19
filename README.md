@@ -130,7 +130,7 @@ Privacy-first:
 ![Evaluation Results](https://github.com/Raj96659/AI-Resume-Interviewer/blob/main/Screenshoots/3.png)
 
 ### LLM Suggestions
-![Demo](./screenshots/demo.gif)
+![Demo](https://github.com/Raj96659/AI-Resume-Interviewer/blob/main/Screenshoots/4.png)
 
 # 💡 Why This Project Is Unique
 ```
