@@ -121,7 +121,7 @@ Privacy-first:
 # 🎥 Demo Screenshot
 
 ### Application Interface
-![App Interface](./screenshots/interface.png)
+![App Interface](https://github.com/Raj96659/AI-Resume-Interviewer/blob/main/Screenshoots/1.png)
 
 ### Question Generation
 ![Question Generation](./screenshots/question-generation.png)
