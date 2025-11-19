@@ -63,29 +63,47 @@ End-to-end workflow for practice and learning.
 
 # 📁 Project Structure
 
+```
+ai_resume_interviewer/
+```
+```
+
+To:
+````markdown
+```
+ai_resume_interviewer/
+```
+```
+
+### 2. Use a proper ASCII tree format:
+
+```
 ai_resume_interviewer/
 │
-├── app.py # Main Streamlit application
-├── requirements.txt # Python dependencies
-├── .env # Environment variables (API keys)
-├── README.md # Project documentation
+├── app.py                      # Main Streamlit application
+├── requirements.txt            # Python dependencies
+├── .env                        # Environment variables
+├── README.md                   # Documentation
 │
 ├── data/
-│ └── sample_resumes/ # Sample PDFs for testing
+│   └── sample_resumes/        # Sample PDFs for testing
 │
 ├── src/
-│ ├── init.py
-│ ├── pdf_parser.py # PDF text extraction
-│ ├── text_splitter.py # Text chunking logic
-│ ├── rag_builder.py # FAISS vector database creation
-│ ├── interview_agent.py # Question generation with Gemini
-│ ├── evaluator.py # Answer evaluation with Gemini
-│ │
-│ └── utils/
-│ ├── init.py
-│ ├── cleaning.py # Text preprocessing utilities
-│ ├── prompts.py # LLM prompt templates
-│ └── session_handler.py # Streamlit session state management
+│   ├── __init__.py
+│   ├── pdf_parser.py          # PDF text extraction
+│   ├── text_splitter.py       # Text chunking
+│   ├── rag_builder.py         # FAISS vector database
+│   ├── interview_agent.py     # Question generation
+│   ├── evaluator.py           # Answer evaluation
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       ├── cleaning.py        # Text preprocessing
+│       ├── prompts.py         # Prompt templates
+│       └── session_handler.py # Session state
 │
 └── static/
-└── style.css # Custom CSS styling (optional)
+    └── style.css              # Custom styling
+```
+
+
