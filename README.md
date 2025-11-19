@@ -127,9 +127,9 @@ Privacy-first:
 ![Question Generation](https://github.com/Raj96659/AI-Resume-Interviewer/blob/main/Screenshoots/2.png)
 
 ### Evaluation Results
-![Evaluation Results](./screenshots/evaluation.png)
+![Evaluation Results](https://github.com/Raj96659/AI-Resume-Interviewer/blob/main/Screenshoots/3.png)
 
-### Full Demo
+### LLM Suggestions
 ![Demo](./screenshots/demo.gif)
 
 # 💡 Why This Project Is Unique
