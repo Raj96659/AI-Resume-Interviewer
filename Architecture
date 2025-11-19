@@ -1,0 +1,64 @@
+                   ┌─────────────────────────────┐
+                   │         User Uploads         │
+                   │       Resume (PDF File)      │
+                   └───────────────┬──────────────┘
+                                   │
+                                   ▼
+                       ┌────────────────────┐
+                       │   PDF Parser       │
+                       │ extract_text()     │
+                       └─────────┬──────────┘
+                                 │
+                                 ▼
+                     ┌──────────────────────┐
+                     │   Text Cleaning       │
+                     │ clean_text()          │
+                     └──────────┬────────────┘
+                                │
+                                ▼
+                      ┌──────────────────────┐
+                      │   Text Splitter       │
+                      │ chunk_text()          │
+                      └──────────┬────────────┘
+                                 │
+                                 ▼
+                 ┌──────────────────────────────────┐
+                 │   RAG Builder (FAISS + Gemini)    │
+                 │ create_vector_db()                │
+                 ├──────────────────────────────────┤
+                 │ Embeddings → Gemini               │
+                 │ Vector DB → FAISS (in-memory)     │
+                 └──────────────────┬────────────────┘
+                                    │
+                              (Retriever)
+                                    │
+                                    ▼
+                   ┌────────────────────────────────┐
+                   │  Interview Agent (LLM)          │
+                   │ ask_question()                  │
+                   │ - Retrieves context             │
+                   │ - Generates resume-based Q      │
+                   └──────────────────┬──────────────┘
+                                      │
+                                      ▼
+                            User Sees Question
+                                      │
+                                      ▼
+                           User Writes Answer
+                                      │
+                                      ▼
+                   ┌────────────────────────────────┐
+                   │        Evaluator (LLM)         │
+                   │ evaluate_answer()              │
+                   │ - Score (0-10)                 │
+                   │ - Reason                       │
+                   │ - Resume alignment             │
+                   │ - Improvement suggestions      │
+                   └──────────────────┬──────────────┘
+                                      │
+                                      ▼
+                       ┌────────────────────────────┐
+                       │      Streamlit UI           │
+                       │ Shows: Q, Answer, Score     │
+                       │ Suggestions, Context        │
+                       └────────────────────────────┘
