@@ -113,4 +113,39 @@ User Answers
         │
         ▼
 Evaluator → Scores answers + gives improvement tips
+
+Privacy-first:
+✔ Every session creates a new FAISS DB
+✔ Nothing saved after refresh
+```
+# 🎥 Demo Screenshot
+
+### Application Interface
+![App Interface](./screenshots/interface.png)
+
+### Question Generation
+![Question Generation](./screenshots/question-generation.png)
+
+### Evaluation Results
+![Evaluation Results](./screenshots/evaluation.png)
+
+### Full Demo
+![Demo](./screenshots/demo.gif)
+
+# 💡 Why This Project Is Unique
+```
+Most ML/AI interview tools ask generic questions.
+This one interviews you strictly on your own resume — a real HR-tech use case.
+
+Hiring managers love candidates who:
+
+Build useful AI tools
+
+Understand RAG properly
+
+Can deploy real applications
+
+Demonstrate end-to-end GenAI skills
+
+This is a high-impact portfolio project.
 ```
