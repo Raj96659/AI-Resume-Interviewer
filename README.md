@@ -65,20 +65,6 @@ End-to-end workflow for practice and learning.
 
 ```
 ai_resume_interviewer/
-```
-```
-
-To:
-````markdown
-```
-ai_resume_interviewer/
-```
-```
-
-### 2. Use a proper ASCII tree format:
-
-```
-ai_resume_interviewer/
 │
 ├── app.py                      # Main Streamlit application
 ├── requirements.txt            # Python dependencies
@@ -105,5 +91,26 @@ ai_resume_interviewer/
 └── static/
     └── style.css              # Custom styling
 ```
+# 🧪 How It Works (Architecture)
 
-
+```
+User uploads PDF
+        │
+        ▼
+PDF Parser → Extracts & cleans text
+        │
+        ▼
+Text Splitter → Creates semantic chunks
+        │
+        ▼
+RAG Builder → Embeddings + FAISS Vector DB (session-based)
+        │
+        ▼
+Interview Agent → Generates resume-based questions
+        │
+        ▼
+User Answers
+        │
+        ▼
+Evaluator → Scores answers + gives improvement tips
+```
